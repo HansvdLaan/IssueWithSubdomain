@@ -1,0 +1,11 @@
+services:
+  mycontainer:
+    container_name: "MyContainer"
+    build:
+      context: .
+
+  s3ninja:
+    container_name: "S3Ninja"
+    image: "scireum/s3-ninja:8.3.1"
+    ports:
+      - "9000:9000"
